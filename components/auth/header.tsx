@@ -1,5 +1,10 @@
-import { poppins } from "@/app/page";
 import { cn } from "@/lib/utils";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["600"],
+});
 
 interface HeaderProps {
   label: string;

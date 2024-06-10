@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import LoginButton from "@/components/auth/login-button";
 
-export const poppins = Poppins({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["600"],
 });
