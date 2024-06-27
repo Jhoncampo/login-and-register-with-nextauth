@@ -19,15 +19,17 @@ export const login = async (values: z.infer<typeof LoginSchema>) => {
             redirectTo: DEFAULT_LOGIN_REDIRECT,
         });
     } catch (error) {
+        console.log("erosejrioe: ", error);
         if (error instanceof AuthError) {
             switch (error.type) {
                 case "CredentialsSignin":
                     return { error: "Invalid credentials!" };
-
+                case "CallbackRouteError":
+                    return { error: "Invalid credentials!" };
                 default:
                     return { error: "Something went wrong!" };
             }
         }
-        throw error
+        throw error;
     }
 };
