@@ -31,7 +31,7 @@ export const newVerification = async (token: string) => {
     });
 
     // Todo: Aqui esta dando un error
-    await db.user.delete({ where: { id: existingToken.id } });
+    await db.verificationToken.delete({ where: { id: existingToken.id } });
 
     return { success: "Email verified!" };
 };
