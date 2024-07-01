@@ -19,6 +19,7 @@ import { Button } from "../ui/button";
 import FormError from "../form-error";
 import FormSuccess from "../form-success";
 import { login } from "@/actions/login";
+import Link from "next/link";
 
 const LoginForm = () => {
     const searchParams = useSearchParams();
@@ -43,7 +44,7 @@ const LoginForm = () => {
         startTransition(() => {
             login(values).then((data) => {
                 setError(data?.error);
-                setSuccess(data?.success)
+                setSuccess(data?.success);
             });
         });
     };
@@ -93,6 +94,16 @@ const LoginForm = () => {
                                             type="password"
                                         />
                                     </FormControl>
+                                    <Button
+                                        size="sm"
+                                        variant="link"
+                                        asChild
+                                        className="px-0 font-normal"
+                                    >
+                                        <Link href="/auth/reset">
+                                            Forgot password?
+                                        </Link>
+                                    </Button>
                                     <FormMessage />
                                 </FormItem>
                             )}
