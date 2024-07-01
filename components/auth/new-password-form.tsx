@@ -39,7 +39,6 @@ const NewPasswordForm = () => {
         setError("");
         setSuccess("");
 
-        console.log(values);
         startTransition(() => {
             newPassword(values, token).then((data) => {
                 setError(data?.error);

@@ -10,7 +10,6 @@ export const newPassword = async (
     values: z.infer<typeof NewPasswordSchema>,
     token?: string | null
 ) => {
-    console.log("Token: ", token)
     if (!token) {
         return { error: "Missing token!" };
     }
