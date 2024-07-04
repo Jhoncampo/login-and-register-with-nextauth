@@ -24,7 +24,7 @@ export default function Home() {
                     A simple authentication service
                 </p>
                 <div className="w-full flex items-center justify-center">
-                    <LoginButton>
+                    <LoginButton href="/auth/login">
                         <Button className="" size="lg" variant="secondary">
                             Sing in
                         </Button>
