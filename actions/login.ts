@@ -11,7 +11,6 @@ import {
 } from "@/lib/tokens";
 import { sendTwoFactorTokenEmail, sendVerificationEmail } from "@/lib/mail";
 import { getTwoFactorTokenByEmail } from "@/data/two-factor-token";
-import { error } from "console";
 import { db } from "@/lib/db";
 import { getTwoFactorConfirmationByUserById } from "@/data/two-factor-confirmation";
 
