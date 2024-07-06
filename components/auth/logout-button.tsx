@@ -7,7 +7,7 @@ interface LogoutButtonProps {
 
 const LogoutButton = ({ children }: LogoutButtonProps) => {
     const onClick = () => {
-        logout();
+        logout().then(() => (window.location.href = "/auth/login"));
     };
     return (
         <span onClick={onClick} className="cursor-pointer">
