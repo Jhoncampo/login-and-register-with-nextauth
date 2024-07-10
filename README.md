@@ -1,4 +1,4 @@
-## For this project use these tools
+## For this project I use these tools
 
 -   [Nextjs](https://nextjs.org/) - Framework
 -   [Authjs](https://authjs.dev/) - Autentication
