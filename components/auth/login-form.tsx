@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation";
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import CardWrapper from "./card-wrappers";
+import CardWrapper from "@/components/auth/card-wrappers";
 import {
     Form,
     FormField,
