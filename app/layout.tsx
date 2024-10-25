@@ -23,6 +23,7 @@ export default async function RootLayout({
             <html lang="en">
                 <body className={inter.className}>
                     <Toaster />
+                    <p>hola como estas</p>
                     {children}
                 </body>
             </html>
